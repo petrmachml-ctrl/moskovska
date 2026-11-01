@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#264f56">
+  <meta name="description" content="Náhled varianty A pre projekt na Moskovskej v Martine. Ilustračné fotografie a fiktívne údaje; nejde o skutočnú predajnú ponuku.">
+  <meta property="og:title" content="Dom BALCON — Náhled, varianta A">
+  <meta property="og:description" content="Ilustračný návrh s fiktívnymi fotografiami a ukážkovými údajmi.">
+  <meta property="og:type" content="website">
+  <title>Dom BALCON — Náhled, varianta A</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="./assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Preskočiť na obsah</a>
+  <div class="preview-bar">
+    <div class="container preview-inner"><span class="preview-badge">Náhled</span><span>Varianta A</span><span class="preview-notice">Ilustrácia — fiktívne fotografie a ukážkové údaje.</span></div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="wordmark" href="./" aria-label="Dom BALCON, úvodná stránka">Dom <strong>BALCON</strong></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav"><span>Menu</span><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg></button>
+      <nav id="main-nav" aria-label="Hlavná navigácia"><a href="#projekt">Projekt</a><a href="#ponuka">Ponuka</a><a href="#lokalita">Lokalita</a><a href="#kontakt">Kontakt</a></nav>
+    </div>
+  </header>
+  <main id="obsah">
+    <section class="hero" aria-labelledby="hero-title">
+      <figure class="hero-figure">
+        <img src="./assets/exterior.webp" alt="Ilustračná, fiktívna podoba dokončeného mestského domu. Nejde o skutočný projekt." width="1536" height="1024" fetchpriority="high">
+        <figcaption><span class="image-label">Ilustrácia</span><span>Fiktívna podoba dokončeného domu</span></figcaption>
+      </figure>
+      <div class="container hero-inner"><div class="hero-copy">
+        <h1 id="hero-title">Bývanie, práca<br class="desktop-break"> a služby v centre Martina.</h1>
+        <p>Osem jednotiek na Moskovskej ulici.<br>Byty, administratíva, obchod<br class="desktop-break"> a podkrovný apartmán.</p>
+        <a class="button primary" href="#ponuka">Vybrať priestor <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a>
+      </div></div>
+    </section>
+    <div class="facts container" aria-label="Základné informácie o projekte"><p><strong>8</strong> jednotiek</p><p><strong>7</strong> parkovacích miest<span>v predajnom pláne</span></p><p>Výstavba prebieha</p></div>
+
+    <section class="offer section container" id="ponuka" aria-labelledby="offer-title">
+      <div class="section-heading"><div><h2 id="offer-title">Ponuka priestorov</h2><p>Všetky označenia, dispozície, výmery a stavy jednotiek sú vymyslené.<br>Ceny na vyžiadanie. Nejde o skutočnú predajnú ponuku.</p></div><span class="demo-label">Ukážkové údaje</span></div>
+      <div class="filters"><div class="filter-fields"><label>Typ priestoru<select id="type-filter"><option value="all">Všetky priestory</option><option value="byt">Byty</option><option value="administrativa">Administratíva</option><option value="obchod">Obchod / služby</option><option value="apartman">Podkrovný apartmán</option></select></label><label>Stav<select id="status-filter"><option value="all">Všetky stavy</option><option>Voľné</option><option>Rezervované</option></select></label></div><p id="result-count" role="status" aria-live="polite">Zobrazených 8 z 8 jednotiek</p></div>
+      <div class="offer-table"><table><caption class="sr-only">Fiktívna ponuka ôsmich jednotiek. Interiér a exteriér sú uvedené samostatne.</caption><thead><tr><th scope="col">Jednotka</th><th scope="col">Typ</th><th scope="col">Podlažie</th><th scope="col">Interiér</th><th scope="col">Exteriér</th><th scope="col">Stav</th><th scope="col"><span class="sr-only">Detail a dopyt</span></th></tr></thead><tbody id="unit-rows"></tbody></table></div>
+      <div id="empty-state" class="empty-state" hidden><h3>Pre tento výber tu nie je jednotka.</h3><p>Skúste iný typ priestoru alebo stav.</p><button class="button secondary" id="reset-filters">Zobraziť celú ponuku</button></div>
+      <noscript><p>Na filtrovanie a otvorenie detailu jednotiek povoľte JavaScript. Toto je ilustračný náhľad, nie skutočná predajná ponuka.</p></noscript>
+    </section>
+
+    <section class="gallery section container" aria-labelledby="gallery-title"><div class="section-heading"><h2 id="gallery-title">Predstava priestorov</h2><p>Fiktívne interiéry pre predstavu o vizuálnom štýle.</p></div><div class="gallery-grid">
+      <figure><button class="photo-button" data-image="living" aria-label="Zväčšiť ilustráciu interiéru bytu"><img src="./assets/living.webp" alt="Ilustračný interiér bytu s dubovým nábytkom a svetlou pohovkou." width="1536" height="1024" loading="lazy"><span class="image-label">Ilustrácia</span><span class="enlarge-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></button><figcaption>Interiér bytu <span>Ilustrácia</span></figcaption></figure>
+      <figure><button class="photo-button" data-image="office" aria-label="Zväčšiť ilustráciu administratívneho priestoru"><img src="./assets/office.webp" alt="Ilustračná kancelária s pracovnými stolmi a presklenou priečkou." width="1536" height="1024" loading="lazy"><span class="image-label">Ilustrácia</span><span class="enlarge-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 4H4v4m12-4h4v4M4 16v4h4m12-4v4h-4"/></svg></span></button><figcaption>Administratíva <span>Ilustrácia</span></figcaption></figure>
+    </div></section>
+
+    <section class="project-section" id="projekt"><div class="container project-grid"><div><h2>Projekt na Moskovskej</h2><p>Menší polyfunkčný dom v centre Martina.<br>Investorom je BALCON, s. r. o.</p><p>Štyri byty, dva administratívne priestory, jeden priestor pre obchod alebo služby a jeden podkrovný apartmán. Rozdielne možnosti pod jednou strechou.</p></div><div><h2>Výstavba</h2><p>Plánované ukončenie stavebných prác:<br><strong>30. 10. 2027</strong></p><p>Termín kolaudácie a odovzdania bude potvrdený. Presné podmienky parkovania doplnia predajné podklady.</p></div></div></section>
+    <section class="location-section section container" id="lokalita"><div><h2>V centre Martina</h2><p>Moskovská ulica, Martin.</p><p>Presnú polohu domu a informácie o okolí doplníme po potvrdení projektových podkladov.</p></div><a class="text-link" href="https://www.openstreetmap.org/search?query=Moskovsk%C3%A1%2C%20Martin" target="_blank" rel="noopener noreferrer">Pozrieť ulicu na mape <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12"/></svg><span class="sr-only"> (otvorí sa v novej karte)</span></a></section>
+    <section class="contact-section" id="kontakt"><div class="container contact-inner"><div><h2>Priestor pre vaše plány.</h2><p>Vyskúšajte si výber jednotky a ukážkový dopyt.<br>Kontaktné údaje predaja ešte neboli doplnené.</p></div><a href="#ponuka" class="button primary">Vybrať jednotku <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6 6 6-6 6"/></svg></a></div></section>
+  </main>
+  <footer class="container site-footer"><div class="footer-main"><a class="wordmark" href="./">Dom <strong>BALCON</strong></a><p>Investor: BALCON, s. r. o.</p></div><div class="footer-note"><p>Pracovný názov. Náhled varianty A.<br>Ilustračné fotografie a údaje nepredstavujú skutočnú ponuku projektu.</p><p>Bez merania návštevnosti a cookies.<br>Ukážkové dopyty sa neodosielajú ani neukladajú.</p></div></footer>
+
+  <dialog id="unit-dialog" aria-labelledby="unit-title"><div class="dialog-toolbar"><span class="demo-label">Ilustračná jednotka</span><button class="icon-button" id="close-unit" aria-label="Zavrieť detail"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><div id="unit-detail"></div></dialog>
+  <dialog id="image-dialog" aria-labelledby="lightbox-title"><div class="dialog-toolbar"><h2 id="lightbox-title">Ilustrácia</h2><button class="icon-button" id="close-image" aria-label="Zavrieť fotografiu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6"/></svg></button></div><img id="lightbox-image" alt="" width="1536" height="1024"><p>Fiktívny interiér, nie fotografia skutočného projektu.</p></dialog>
+</body>
+</html>

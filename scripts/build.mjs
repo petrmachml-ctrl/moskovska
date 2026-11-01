@@ -1,0 +1,7 @@
+import { cp, mkdir, rm } from 'node:fs/promises';
+await rm('dist', { recursive: true, force: true });
+await mkdir('dist', { recursive: true });
+for (const path of ['index.html', 'styles.css', 'app.js', 'assets', 'data', 'robots.txt', '.nojekyll']) {
+  await cp(path, `dist/${path}`, { recursive: true });
+}
+console.log('Static production build created in dist/. No secrets or development files copied.');

@@ -1,0 +1,19 @@
+{
+  "synthetic": true,
+  "label": "Illustrations, not actual project photography",
+  "reference": "User-approved illustrated variant A",
+  "images": [
+    {
+      "name": "exterior",
+      "prompt": "Create a clean standalone landscape architectural photograph-style illustration, NOT a website, with NO TEXT, NO LABELS, NO WATERMARKS. Reproduce the fictional building pictured in the top hero photo of this supplied website mockup as closely as possible: a modest premium Central European mixed-use urban infill house, light mineral plaster, grey stone ground-floor shop front, slim anthracite window frames, modest black metal balconies, dark pitched roof and attic dormer. Keep the same quiet traditional neighboring row-house context, warm early evening light, realistic materials and believable small-town street scale. Four above-ground storeys plus attic are appropriate to the fictitious project. The building is entirely imaginary and will be labelled as illustration in the website HTML. Ignore ALL website text, UI, room images and table; produce ONLY the clean full-frame building image, not a screenshot or collage. Frame the main house on the right two-thirds with neighboring street on the left, facade front three-quarter view, portrait subject in a landscape 3:2 composition, premium architectural photography, clear details, no recognisable real building, no signage containing brand or words."
+    },
+    {
+      "name": "living",
+      "prompt": "Create a clean standalone landscape interior photograph-style illustration, NOT a website, with NO TEXT, NO LABELS, NO WATERMARKS. Reproduce the fictional residential living room pictured at the lower left of the supplied website mockup: a modest contemporary Slovak apartment, pale warm-grey fabric sofa on the right, muted petrol cushions, oak cabinetry and low TV unit on the left, simple oval coffee table, large window/door at the back with sheer curtains and modest balcony beyond, soft natural daylight. Calm, credible, lived-in but uncluttered, no people, no extravagant amenities. This is an entirely imaginary atmosphere illustration to be labelled in HTML, not an actual project photograph. Ignore all mockup text, exterior and office photo. Produce only the clean room photo edge to edge, landscape 3:2, architectural interior photography."
+    },
+    {
+      "name": "office",
+      "prompt": "Create a clean standalone landscape interior photograph-style illustration, NOT a website, with NO TEXT, NO LABELS, NO WATERMARKS. Reproduce the fictional office pictured at the lower right of the supplied website mockup: a modest light professional office, oak desks for two people, simple dark task chairs, black-framed glass partition on the left, a couple of green plants, restrained shelving, neutral walls, big window with soft daylight and traditional Central European city surroundings outside, dark linear ceiling light. Credible working room rather than luxury corporate suite. This is entirely imaginary and will be labelled illustration in HTML. Ignore all website mockup text, exterior and apartment images. Produce only the clean office photo edge to edge, landscape 3:2, convincing architectural photography, no people, no readable documents or logos."
+    }
+  ]
+}
