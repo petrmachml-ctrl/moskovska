@@ -34,7 +34,11 @@ V cloudovém prostředí lze browser cache zvolit pomocí `PLAYWRIGHT_BROWSERS_P
 
 ## Nasazení
 
-Cíl: GitHub Pages repozitáře `petrmachml-ctrl/moskovska`, větev `main`, kořen `/`. Soubor `.nojekyll` umožňuje přímo obsluhovat statické soubory bez Jekyllu. Po zveřejnění je očekávaná adresa `https://petrmachml-ctrl.github.io/moskovska/`. Skutečný stav nasazení je třeba ověřit HTTP požadavkem, nikoli jen úspěšným pushem.
+Pomocný ilustrační náhled lze otevřít přes [raw.githack.com](https://raw.githack.com/petrmachml-ctrl/moskovska/main/index.html). Služba může před vlastní stránkou zobrazit upozornění **External Content Notice** s tlačítkem **Open the page**. Tento mezikrok a podmínky služby nejsou součástí aplikace; tento odkaz není náhradou řádného nasazení. Pro přesně zmrazenou verzi nahraďte `main` celým SHA vydaného commitu. Jde o náhledový přístup k již veřejnému repozitáři, nikoli o vlastní doménu nebo hosting se zárukou dostupnosti. Soubory WebP služba přesměrovává na GitHub; při HTTP ověření je nutné sledovat přesměrování.
+
+Preferovaný trvalejší cíl zůstává GitHub Pages repozitáře `petrmachml-ctrl/moskovska`, větev `main`, kořen `/`. Přímé zapnutí přes připojenou integraci skončilo HTTP 403 `Resource not accessible by integration`; oprávnění zápisu obsahu samo neuděluje oprávnění Pages. Podle dokumentace `actions/configure-pages` první zapnutí nemůže vyřešit ani běžný workflow `GITHUB_TOKEN`.
+
+Vlastník jej může zapnout v [Settings → Pages](https://github.com/petrmachml-ctrl/moskovska/settings/pages): Source **Deploy from a branch**, branch **main**, složka **/(root)**, **Save**. Soubory už jsou v repozitáři připravené. Není nutné posílat token v četu. Soubor `.nojekyll` umožňuje přímo obsluhovat statické soubory bez Jekyllu. Po zapnutí bude očekávaná adresa `https://petrmachml-ctrl.github.io/moskovska/`; její funkčnost se musí teprve ověřit, samotný push ji nezřizuje.
 
 Pro jiný statický hosting lze použít obsah `dist/`. Všechny cesty jsou relativní a detail jednotky používá fragment, například `#jednotka/B3.1`, takže funguje i v podadresáři bez přepisování URL. Tlačítko „Mám záujem“ otevírá přímo předvolený formulář přes `#dopyt/B3.1`; samotné označení jednotky otevírá detail.
 

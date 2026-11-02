@@ -21,6 +21,10 @@ test('the approved preview loads real assets, eight synthetic units and clear no
   expect(await page.locator('img[src]').evaluateAll(imgs => imgs.every(img => img.complete && img.naturalWidth > 0))).toBe(true);
   expect(await page.evaluate(() => document.fonts.check('600 16px Manrope'))).toBe(true);
   expect(errors).toEqual([]);
+  await page.getByRole('link', { name: 'Dom BALCON, úvodná stránka', exact: true }).click();
+  await expect(page).toHaveURL(/\/index\.html$/);
+  await expect(page.locator('#unit-rows tr')).toHaveCount(8);
+  await settle(page);
   await page.screenshot({ path: `.impeccable/review/${info.project.name}.png`, fullPage: true, animations: 'disabled' });
 });
 
